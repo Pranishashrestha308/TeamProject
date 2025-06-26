@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #123bcd;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%; 
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: lightslategray;
+    color: #ffa500;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: orange;
+    color: #fff;
+    padding: 2rem;
+    border: .2rem solid orange;
+    cursor: pointer;
+    font-size: 1.7rem; 
+    width: 20rem;
+}
+
+.btn:hover {
+    background: rgba(255, 165, 0, .2);
+    color: #ffa500;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: lightslategray;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%; 
+}
+
+header .logo {
+    font-size: 2.5rem; 
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo h1 {
+    color: #ffa500;
+    font-size: 2.5rem; 
+}
+
+header .nav a {
+    color: white;
+    font-size: 2rem; 
+    margin-left: 2rem; 
+}
+
+header .nav a:hover {
+    color: black;
+}
+
+header .icons i {
+    font-size: 2.5rem; 
+    color: white;
+    cursor: pointer;
+    margin-left: 2rem; /
+}
+
+header .icons i:hover {
+    color: #ffa500;
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: lightslategray;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333; 
+    font-size: 1.7rem; 
+    border-radius: .9rem;
+}
+
+header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem; 
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: orange;
+}
+
+.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.login.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.login form {
+    margin: 2rem;
+    padding: 2rem; 
+    border-radius: .5rem;
+    background: #fff;
+    width: 90%; 
+    max-width: 50rem; 
+    position: relative;
+    overflow-y: auto;
+}
+
+.login form h3 {
+    font-size: 3rem; 
+    color: #444;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1rem;
+}
+
+.login form .box {
+    width: 100%;
+    padding: 1rem; 
+    font-size: 1.7rem; 
+    color: #333;
+    margin: .8rem 0; 
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    text-transform: none;
+}
+
+.login form .box:focus {
+    border-color: black;
+}
+
+.login form #remember {
+    margin: 1.5rem 0; 
+}
+
+.login form label {
+    font-size: 1.6rem; 
+}
+
+.login form .btn {
+    display: block;
+    width: 100%;
+}
+
+.login form p {
+    padding: .8rem 0; 
+    font-size: 1.6rem; 
+    color: #666;
+}
+
+.login form p a {
+    color: black;
+}
+
+.login form p a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.login #close-login-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem; 
+    color: #666;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+.login #close-login-btn:hover {
+    color: orange;
+}
+
+#menu-bar {
+    color: #fff;
+    border: 0.1rem solid #fff; 
+    border-radius: .3rem;
+    font-size: 2.5rem; 
+    padding: .6rem 1rem; 
+    cursor: pointer;
+    display: none; 
+}
+
+
+body {
+   
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #666;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: slategrey;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: slategrey;
+}
+.footer{
+    background: #333;
+ }
+ .footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+ }
+ .footer .container .box{
+padding: 5rem;
+flex: 1 1 25rem;
+
+ }
+  .footer .container .box h3{
+    font-size: 2.5rem;
+    padding: .20rem 0;
+    color: #fff;
+    display: block;
+  }
+   .footer .container .box p{
+    font-size: 1.5rem;
+    padding: .20rem 0;
+    color: #f0f0f0;
+    display: block;
+   }
+    .footer .container .box a{
+            display: block;
+             font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #f0f0f0;
+    }
+    footer .container .box a:hover{
+        color: #ffa500;
+        text-decoration: underline;
+    }
+    .footer .worked{
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        border-top: .2rem solid rgba(255, 255, 255, .2);
+    }
+    .footer .worked span{
+        color: #ffa500;
+    }
+@media (max-width: 768px) {
+    .home .content h3 {
+        font-size: 3.5rem; 
+    }
+    .home .content p {
+        font-size: 1.8rem; 
+    }
+}
+
+@media (max-width: 450px) {
+    .home .content h3 {
+        font-size: 2.8rem;
+    }
+    .home .content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%; 
+    }
+    header {
+        padding: 1rem 5%;
+    }
+    section {
+        padding: 2rem 5%;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 1rem 3%; 
+    }
+    section {
+        padding: 2rem 3%; 
+    }
+    .home .content h3 {
+        font-size: 4rem; 
+    }
+    .home .content p {
+        font-size: 1.8rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; 
+    }
+
+    #menu-bar {
+        display: initial; 
+    }
+
+    header .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: lightslategray;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 0; 
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path .2s linear;
+        display: block; 
+    }
+
+    header .nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .nav a {
+        display: block;
+        margin: 1rem 2rem; 
+        padding: 1.2rem; 
+        text-align: center;
+        border-radius: .5rem;
+        background: white;
+        color: #333; 
+        font-size: 2rem; 
+    }
+
+    header .search-bar-container #search-bar {
+        font-size: 1.5rem; 
+    }
+
+    .login form {
+        width: 95%; 
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .login form h3 {
+        font-size: 2.5rem;
+    }
+
+    .login form .box {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .login form label,
+    .login form p {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 0.7rem 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .home .content h3 {
+        font-size: 3rem; 
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+
+    .home .vdo {
+        padding: 0.5rem; 
+        bottom: 1rem; 
+    }
+
+    .home .vdo .vd-btn {
+        height: 1.2rem; 
+        width: 1.2rem;
+        margin: 0.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 45%; 
+    }
+
+    header {
+        padding: 1rem 2rem; 
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem; 
+    }
+    .home .content p {
+        font-size: 1.3rem;
+    }
+}

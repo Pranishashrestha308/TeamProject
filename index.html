@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Explorer</title>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><h1> Team Explorer</h1></a>
+        <nav class="nav">
+             <a href="index.html">Page</a>
+            <a href="home.html">Home</a>
+            <a href="book.html">Book</a>
+            <a href="package.html">Packages</a>
+            <a href="activities.html">Activities</a>
+            <a href="album.html">Album</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+       <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar"class="fas fa-search"></label>
+        </form>
+</header>
+
+       <div class="login">
+            <i class="fas fa-times" id="close-login-btn"></i>
+            <form action="">
+                <h3>LOGIN</h3>
+                <input type="email" class="box" placeholder="Enter your email..">
+                <input type="password" class="box" placeholder="Enter your password..">
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+                <br>
+                <p>forget password <a href="https://accounts.google.com">Click here</a></p>
+                <p>Don`t have account? <a href="https://accounts.google.com">Register now</a></p>
+            </form>
+        </div> 
+
+        <section class="home" id="home">
+           <div class="content">
+           <h3>Discover the world, one trip at a time</h3>
+           <p>May your travels be filled with unforgettable experiences and stories worth sharing.</p>
+           <a href="discover.html" class="btn">discover more</a>
+           </div>
+
+            <div class="vdo">
+           <span class="vd-btn active" data-src="mon1.vdo.mp4"></span>
+           <span class="vd-btn " data-src="mon2.vdo.mp4"></span>
+           <span class="vd-btn " data-src="mon3.vdo.mp4"></span>
+           <span class="vd-btn " data-src="mon4.vdo.mp4"></span>
+           <span class="vd-btn" data-src="mon5.vdo.mp4"></span>
+           </div> 
+           <div class="video">
+            <video src="mon1.vdo.mp4" id="vdo" loop autoplay muted></video>
+           </div>
+        </section>
+
+        <!-- book -->
+        <section class="book" id="book">
+           <h1 class=" heading">
+             <span>B</span>
+             <span>o</span>
+             <span>o</span>
+             <span>k</span>
+             <span class="space"></span>
+             <span>n</span>
+             <span>o</span>
+             <span>w</span>
+
+           </h1>
+       <div class="img">
+        <div class="image">
+            <img src="image/online.jpg" alt="Tour">
+           </div>
+           <form action="">
+            <div class="input">
+                <h3>Where to</h3>
+              <input type="text"placeholder="place name">
+            </div>
+            <div class="input"> 
+             <h3>How many</h3>
+             <input type="number" placeholder="number of guests">
+            </div>
+            <div class="input">
+            <h3>Arrivals</h3>
+            <input type="date">
+            </div>
+            <div class="input">
+             <h3>leaving</h3>
+            </div>
+            <input type="submit" class="btn" value="Book now">
+           </form>
+       </div>
+        </section>
+        <!-- book -->
+
+         <!-- packages -->
+         <section class="pack"id="pack">
+           <h1 class=" heading">
+             <span>P</span>
+             <span>a</span>
+             <span>c</span>
+             <span>k</span>
+             <span>a</span>
+             <span>g</span>
+             <span>e</span>
+             <span>s</span>
+
+           </h1>
+           <div class="container">
+
+            <div class="box">
+             <img src="image/london.jpg" alt="London">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>London</h3>
+               <p>London, the capital of England and the United Kingdom, is a vibrant global hub renowned for its
+                 rich history, diverse culture, and iconic landmarks.</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 </div>
+                 <div class="cost"> $50.00 <span>$100.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+             <img src="image/Louise.jpg" alt="Louise lake">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>Louise lake</h3>
+               <p>Lake Louise is an incredibly stunning glacial lake located within Banff National Park in Alberta, 
+                Canada, famously recognized for its mesmerizing turquoise waters.</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+                 <i class="far fa-star"></i>
+                 </div>
+                 <div class="cost"> $70.00 <span>$115.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+             <div class="box">
+             <img src="image/Tajmahal.jpg" alt="Tajmahal">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>Tajmahal</h3>
+               <p>The Taj Mahal is an exquisite ivory-white marble mausoleum located on the south bank of the 
+                Yamuna River in the Indian city of Agra.</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+                 </div>
+                 <div class="cost"> $70.00 <span>$120.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+             <div class="box">
+             <img src="image/Pokhara.jpg" alt="Pokhara">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>Pokhara</h3>
+               <p>Pokhara, often dubbed the "tourism capital of Nepal," is a captivating city nestled in a valley 
+                beside the serene Phewa Lake</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 </div>
+                 <div class="cost"> $80.00 <span>$110.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+             <div class="box">
+             <img src="image/seoul.jpg" alt="Seoul">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>Brazil</h3>
+               <p>Seoul, the bustling capital of South Korea, is a captivating metropolis where ancient traditions
+                 seamlessly blend with cutting-edge modernity.</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+                 <i class="far fa-star"></i>
+                 </div>
+                 <div class="cost"> $100.00 <span>$200.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+
+          <div class="box">
+             <img src="image/Everest.jpg" alt="Everest">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>Brazil</h3>
+               <p>Mount Everest, known as Sagarmatha in Nepal and Chomolungma in Tibet, stands as the Earth's 
+                highest mountain above sea level, reaching an elevation of 8,848.86 meters.</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+                 </div>
+                 <div class="cost"> $100.00 <span>$200.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+             <div class="box">
+             <img src="image/Brazil.jpg" alt="Brazil">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>Brazil</h3>
+               <p>Brazil, the largest country in South America and the fifth largest globally, is a nation of immense 
+                natural beauty, cultural vibrancy, and economic significance.</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+                 <i class="far fa-star"></i>
+                 </div>
+                 <div class="cost"> $60.00 <span>$130.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+            <br>
+           
+            <div class="box">
+             <img src="image/Fuji.jpg" alt="Fuji">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>Toronto</h3>
+               <p>Mount Fuji, or Fujisan, is Japan's tallest and most iconic peak, an active stratovolcano
+                 rising majestically to 3,776 meters southwest of Tokyo.</p>
+                 <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+                 </div>
+                 <div class="cost"> $120.00 <span>$220.00</span> </div>
+                 <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+           </div>
+         </section>
+<!-- packages -->
+
+  <!-- activities-->
+     <section class="service" id="service">
+       <h1 class=" heading">
+             <span>A</span>
+             <span>c</span>
+             <span>t</span>
+             <span>i</span>
+             <span>v</span>
+             <span>i</span>
+             <span>t</span>
+             <span>i</span>
+             <span>e</span>
+             <span>s</span>
+
+           </h1>
+           <div class="container">
+            <div class="box"> 
+            <i class="fas fa-hotel"></i>
+            <h3>Reasonable hotel</h3>
+            <p>Affordable hotels, also known as budget or economy hotels, offer a practical and cost-effective 
+              lodging solution for travelers who prioritize value over luxury. These establishments typically 
+              provide essential amenities like clean, comfortable rooms, private bathrooms, and often complimentary
+               Wi-Fi, without the extensive frills of higher-end accommodations. </p>
+            </div>
+
+            <div class="box">
+              <i class="fas fa-utensils"></i>
+             <h3>Food & drinks</h3>
+             <p>Food and beverage (F&B) services are a cornerstone of the hospitality industry, encompassing a wide
+               array of dining and drinking options within hotels, resorts, restaurants, and other establishments. 
+               Beyond simply providing sustenance, F&B aims to enhance the overall guest experience, offering 
+               everything from elaborate fine dining experiences </p>
+            </div>
+
+            <div class="box">
+              <i class="fas fa-bullhorn"></i>
+             <h3>Safety</h3>
+             <p>Safety in services, particularly within the hospitality industry, is paramount and encompasses a 
+              comprehensive array of measures designed to protect both guests and staff. This involves proactive 
+              risk assessment and management, identifying potential hazards such as slips, trips, falls, fire risks,
+               food safety issues, and security threats.</p>
+            </div>
+
+             <div class="box">
+              <i class="fas fa-globe-asia"></i>
+             <h3>World</h3>
+             <p>"Around the world" travel typically refers to a journey that circumnavigates the globe, often
+               involving visits to multiple continents and countries, going in a generally continuous forward 
+               direction (east or west), and crossing both the Atlantic and Pacific Oceans.</p>
+            </div>
+
+     </section>
+
+         <!-- services -->
+
+           <!-- album -->
+          <section class="gallery"id="gallery">
+          <h1 class="heading">
+             <span>A</span>
+             <span>L</span>
+             <span>B</span>
+             <span>U</span>
+             <span>M</span>
+             
+           </h1>
+          <div class="container">
+            <div class="box"> 
+             <img src="image/Toronto.jpg" alt="Toronto">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+</div>
+</div>
+              <div class="box"> 
+             <img src="image/seoul.jpg" alt="Seoul">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+             </div>
+            </div>
+
+            <div class="box"> 
+             <img src="image/Everest.jpg" alt="Everest">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+              </div>
+              </div>
+
+              <div class="box"> 
+             <img src="image/soyambhu.jpg" alt="soyambhu">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+              </div>
+              </div>
+               
+               <div class="box"> 
+             <img src="image/Louise.jpg" alt="Louise">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+              </div>
+              </div>
+
+              <div class="box"> 
+             <img src="image/Tajmahal.jpg" alt="Tajmahal">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+              </div>
+              </div>
+
+              <div class="box"> 
+             <img src="image/Brazil.jpg" alt="Brazil">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+              </div>
+              </div>
+
+              <div class="box"> 
+             <img src="image/rara.jpg" alt="Rara">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+              </div>
+              </div>
+
+              <div class="box"> 
+             <img src="image/Fuji.jpg" alt="Fuji">
+             <div class="content">
+             <h3>Unforgettable destination</h3>
+             <p>From the awe-inspiring heights of the Himalayan peaks to the serene depths of the Great Barrier 
+              Reef, amazing places across the globe captivate us with their unparalleled beauty, historical 
+              significance, and unique cultural tapestries. These destinations can be natural wonders like the 
+              vibrant Grand Canyon, the mystical Amazon Rainforest, or the ethereal Northern Lights, showcasing 
+              the raw power and artistry of our planet. </p>
+              <a href="#" class="btn">See more</a>
+              </div>
+              </div>
+
+
+          </div>
+</section>
+
+         <!-- album-->
+           
+         <!-- contact -->
+               <section class="contact" id="contact">
+                <h1 class="heading">
+             <span>C</span>
+             <span>O</span>
+             <span>N</span>
+             <span>T</span>
+             <span>A</span>
+             <span>C</span>
+             <span>T</span>
+           </h1>
+               </section>
+   <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+         <!-- contact -->
+    
+         <!-- footer -->
+ <section class="footer">
+  <div class="container">
+<div class="box">
+  <h3>About website</h3>
+  <p>A travel website is an online platform that provides various services and information related to travel. It can 
+    range from simple travel blogs sharing personal experiences to complex online travel agencies (OTAs) that allow 
+    users to book flights, hotels, car rentals, and complete vacation packages.</p>
+</div>
+<div class="box">
+<h3>Branch Location</h3>
+<a href="https://edusanjal.com/school/shivapuri-secondary-school/">Maharajgunj</a>
+ </div>
+ <br>
+<div class="box">
+<h3>Links</h3>
+<a href="#home">Home</a>
+ <a href="#book">Book</a>
+<a href="#packages">Packages</a>
+<a href="#services">Services</a>
+<a href="#album">Album</a>
+<a href="#contact">Contact</a>
+</div>
+<br>
+<div class="box">
+<h3>Follow us</h3>
+<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a>
+<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a>
+<a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i> Linkedin</a>
+</div>
+</div>
+<h1 class="worked"> Created by <span>Team</span>Explorer in 2025</h1>
+ </section>
+         <!-- footer -->
+       <script src="index.js"></script>
+    
+</body>
+</html>
