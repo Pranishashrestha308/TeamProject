@@ -312,6 +312,7 @@ button:hover {
 }
 .footer{
     background: #333;
+    margin-top: 50px;
  }
  .footer .container{
     display: flex;

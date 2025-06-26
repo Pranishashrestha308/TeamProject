@@ -146,6 +146,16 @@ header .search-bar-container label {
     margin-left: 1.5rem;
 }
 
+
+
+/* albums */
+
+@media(max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+}
+
 header .search-bar-container label:hover {
     color: orange;
 }
@@ -657,6 +667,7 @@ header {
 
  .footer{
     background: #333;
+    margin-top: 50px;
  }
  .footer .container{
     display: flex;
@@ -664,7 +675,7 @@ header {
     gap: 1.5rem;
  }
  .footer .container .box{
-padding: 5rem;
+padding: 1rem;
 flex: 1 1 25rem;
 
  }
