@@ -39,7 +39,7 @@ section {
 
 .heading span {
     font-size: 3.5rem;
-    background: lightslategray;
+    background: #0f172b;
     color: #ffa500;
     border-radius: .5rem;
     padding: .2rem 1rem;
@@ -71,7 +71,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: lightslategray;
+    background:#0f172b;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ header .nav a {
 }
 
 header .nav a:hover {
-    color: black;
+    color: #3498db;
 }
 
 header .icons i {
@@ -267,10 +267,9 @@ body {
 form {
     max-width: 600px;
     margin: auto;
-    background: #666;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
     font-size: 20px;
 
 }
@@ -296,38 +295,41 @@ textarea {
     height: 100px;
 }
 
-button {
-    background-color: slategrey;
+#contactbtn {
+    /* background-color: slategrey; */
     color: white;
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
+    font-size: 20px;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
 }
 
-button:hover {
-    background-color: slategrey;
+#contactbtn:hover {
+    background-color: orange;
+    
 }
-.footer{
-    background: #333;
+
+     .footer{
+    background: #0f172b ;
     margin-top: 50px;
  }
  .footer .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
  }
  .footer .container .box{
-padding: 5rem;
-flex: 1 1 25rem;
+padding: 1rem;
+flex: 20rem;    
 
  }
   .footer .container .box h3{
     font-size: 2.5rem;
     padding: .20rem 0;
-    color: #fff;
+    color: orange;
     display: block;
   }
    .footer .container .box p{
@@ -337,9 +339,9 @@ flex: 1 1 25rem;
     display: block;
    }
     .footer .container .box a{
-            display: block;
-             font-size: 1.5rem;
-    padding: .7rem 0;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
     color: #f0f0f0;
     }
     footer .container .box a:hover{
@@ -357,6 +359,15 @@ flex: 1 1 25rem;
     }
     .footer .worked span{
         color: #ffa500;
+    }
+
+
+    /* contact form */
+    #contactbtn{
+        background-color: green;
+    }
+    #contactbtn a{
+        color: black;
     }
 @media (max-width: 768px) {
     .home .content h3 {

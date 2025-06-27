@@ -71,7 +71,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: lightslategray;
+    background-color: #0f172b;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ header .nav a {
 }
 
 header .nav a:hover {
-    color: black;
+    color:#3498db;
 }
 
 header .icons i {
@@ -285,7 +285,7 @@ body {
     line-height: 1.7;
   }
   header {
-    background-color: #d2ab7f;
+    background-color:#0f172b;
     padding: 20px;
     text-align: center;
   }

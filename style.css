@@ -39,7 +39,7 @@ section {
 
 .heading span {
     font-size: 3.5rem;
-    background: lightslategray;
+    background:#0f172b;
     color: #ffa500;
     border-radius: .5rem;
     padding: .2rem 1rem;
@@ -52,10 +52,14 @@ section {
 .btn {
     display: inline-block;
     margin-top: 1rem;
-    background: orange;
-    color: #fff;
-    padding: 2rem;
-    border: .2rem solid orange;
+    background-color: orange;
+    /* color: white; */
+    color: black;
+    justify-content: center;
+     align-items: center;
+     text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1.7rem; 
     width: 20rem;
@@ -71,7 +75,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: lightslategray;
+    background-color: #0f172b;
+    /* background: lightslategray; */
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -98,7 +103,9 @@ header .nav a {
 }
 
 header .nav a:hover {
-    color: black;
+    /* color: black; */
+        color: #3498db;
+
 }
 
 header .icons i {
@@ -353,14 +360,17 @@ body {
     padding: 2rem;
     box-shadow: 0 1rem 2rem black;
     border-radius: .5rem;
+    background-color: white;
 }
 .book .img form .input{
     padding: .5rem 0;
+    /* border: 2px solid black; */
 }
 .book .img form .input input{
     width: 70%;
     padding: 1rem;
-    border: 1rem solid rgba(0, 0, 0, .1);
+    border: 2px solid black;
+    /* border: 1rem solid rgba(0, 0, 0, .1); */
     font-size: 1.7rem;
     color: #333;
     text-transform: none;
@@ -368,10 +378,18 @@ body {
 .book .img form .input h3{
     font-size: 2rem;
     padding: 1rem 0;
-    color: #666;
+    color: black;
 
 }
+form .btns a{
+    font-size: 20px;
+  color: white;
+}
+form .btns{
+    border-radius: 20px;
+        background-color: green;
 
+}
 .pack .container{
     display: flex;
     flex-wrap: wrap;
@@ -512,10 +530,11 @@ color: #ffa500;
 form {
     max-width: 600px;
     margin: auto;
-    background: #666;
+    /* background: #666; */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px black;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     font-size: 20px;
 
 }
@@ -667,23 +686,23 @@ header {
 }
 
  .footer{
-    background: #333;
+    background: #0f172b ;
     margin-top: 50px;
  }
  .footer .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
  }
  .footer .container .box{
 padding: 1rem;
-flex: 1 1 25rem;
+flex: 20rem;    
 
  }
   .footer .container .box h3{
     font-size: 2.5rem;
     padding: .20rem 0;
-    color: #fff;
+    color: orange;
     display: block;
   }
    .footer .container .box p{
@@ -693,9 +712,9 @@ flex: 1 1 25rem;
     display: block;
    }
     .footer .container .box a{
-            display: block;
-             font-size: 1.5rem;
-    padding: .7rem 0;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
     color: #f0f0f0;
     }
     footer .container .box a:hover{
