@@ -455,3 +455,52 @@ color: #ffa500;
         font-size: 1.3rem;
     }
 }
+.footer{
+    background: #0f172b ;
+    margin-top: 50px;
+ }
+ .footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+ }
+ .footer .container .box{
+padding: 1rem;
+flex: 20rem;    
+
+ }
+  .footer .container .box h3{
+    font-size: 2.5rem;
+    padding: .20rem 0;
+    color: orange;
+    display: block;
+  }
+   .footer .container .box p{
+    font-size: 1.5rem;
+    padding: .20rem 0;
+    color: #f0f0f0;
+    display: block;
+   }
+    .footer .container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #f0f0f0;
+    }
+    footer .container .box a:hover{
+        color: #ffa500;
+        text-decoration: underline;
+    }
+    .footer .worked{
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        border-top: .2rem solid rgba(255, 255, 255, .2);
+    }
+    .footer .worked span{
+        color: #ffa500;
+    }
