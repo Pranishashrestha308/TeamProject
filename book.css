@@ -301,6 +301,55 @@ body {
     color: #666;
 
 }
+.footer{
+    background: #0f172b ;
+    margin-top: 50px;
+ }
+ .footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+ }
+ .footer .container .box{
+padding: 1rem;
+flex: 20rem;    
+
+ }
+  .footer .container .box h3{
+    font-size: 2.5rem;
+    padding: .20rem 0;
+    color: orange;
+    display: block;
+  }
+   .footer .container .box p{
+    font-size: 1.5rem;
+    padding: .20rem 0;
+    color: #f0f0f0;
+    display: block;
+   }
+    .footer .container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #f0f0f0;
+    }
+    footer .container .box a:hover{
+        color: #ffa500;
+        text-decoration: underline;
+    }
+    .footer .worked{
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        border-top: .2rem solid rgba(255, 255, 255, .2);
+    }
+    .footer .worked span{
+        color: #ffa500;
+    }
+
 @media (max-width: 768px) {
     .home .content h3 {
         font-size: 3.5rem; 
@@ -360,11 +409,12 @@ body {
         top: 100%;
         left: 0;
         right: 0;
-        background: lightslategray;
+        background:  #0f172b;
         border-top: .1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 0; 
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .2s linear;
+       
         display: block; 
     }
 
@@ -375,11 +425,11 @@ body {
     header .nav a {
         display: block;
         margin: 1rem 2rem; 
-        padding: 1.2rem; 
-        text-align: center;
+        padding: 0.5rem; 
+        text-align: center  ;
         border-radius: .5rem;
-        background: white;
-        color: #333; 
+        /* background: white; */
+        color: white; 
         font-size: 2rem; 
     }
 

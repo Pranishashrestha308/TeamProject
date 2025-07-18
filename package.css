@@ -362,15 +362,16 @@ color: #ffa500;
     }
 
     header .nav {
-        position: absolute;
+       position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background: lightslategray;
+        background:  #0f172b;
         border-top: .1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 0; 
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .2s linear;
+       
         display: block; 
     }
 
@@ -379,13 +380,13 @@ color: #ffa500;
     }
 
     header .nav a {
-        display: block;
+          display: block;
         margin: 1rem 2rem; 
-        padding: 1.2rem; 
-        text-align: center;
+        padding: 0.5rem; 
+        text-align: center  ;
         border-radius: .5rem;
-        background: white;
-        color: #333; 
+        /* background: white; */
+        color: white; 
         font-size: 2rem; 
     }
 
